@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        nav {
+            display: inline-block;
+            width: 80%;
+        }
+
+        nav img {
+            width: 10%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 40%);
+            justify-content: center;
+            align-items: start;
+            row-gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <nav>
+        <img src="logo.png" alt="Health and Fitness Logo">
+        <ul>
+            <li><a href="#exercise-guides">Exercise Guides</a></li>
+            <li><a href="#nutrition-tips">Nutrition Tips</a></li>
+            <li><a href="#success-stories">Success Stories</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <h1>Welcome to Your Health and Fitness Journey</h1>
+        <p>Explore tips and resources to help you live a healthier lifestyle.</p>
+
+        <section class="grid" id="exercise-guides">
+            <h2>Exercise Guides</h2>
+            <div>
+                <img src="image.1.jpeg" alt="Workout 1">
+                <p>Beginner's Strength Training Program: A simple guide to getting started with strength training.</p>
+            </div>
+            <div>
+                <img src="image.2.cardio.jpeg" alt="Workout 2">
+                <p>30-Minute Cardio Workout: A quick cardio routine to get your heart pumping.</p>
+            </div>
+            <div>
+                <img src="image.3.yoga.jpeg" alt="Workout 3">
+                <p>Yoga for Flexibility and Balance: Poses to improve flexibility and promote relaxation.</p>
+            </div>
+            <div>
+                <img src="image.4.HIIT.jpeg" alt="Workout 4">
+                <p>HIIT Workout for Fat Loss: High-intensity intervals to burn fat effectively.</p>
+            </div>
+        </section>
+
+        <section class="grid" id="nutrition-tips">
+            <h2>Nutrition Tips</h2>
+            <div>
+                <img src="image.healthB.jpeg" alt="Recipe 1">
+                <p>Healthy Breakfast Smoothie: Blend 1 banana, 1 cup spinach, 1/2 cup Greek yogurt, and 1 cup almond milk for a nutritious start to your day!</p>
+            </div>
+            <div>
+                <img src="image.6.salad.jpeg" alt="Recipe 2">
+                <p>Quinoa Salad with Fresh Vegetables: Combine cooked quinoa, cherry tomatoes, cucumbers, and feta cheese with a lemon vinaigrette.</p>
+            </div>
+        
+        </section>
+
+        <section class="flex" id="success-stories">
+            <h2>Success Stories</h2>
+            <div>
+                <img src="image.7.sucess.jpeg" alt="Success Story 1">
+                <p>How Jane Lost 30 Pounds in 3 Months: Jane shares her journey and the lifestyle changes that made a difference.</p>
+            </div>
+            <div>
+                <img src="image.1.Markes.jpeg" alt="Success Story 2">
+                <p>Mark's Journey to a Healthier Lifestyle: Mark discusses the challenges he faced and how he overcame them.</p>
+            </div>
+            <div>
+                <img src="image.9.success.jpeg" alt="Success Story 3">
+                <p>Emily's Transformation: From Couch to 5K: Emily recounts her motivation to start running and complete her first 5K.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
